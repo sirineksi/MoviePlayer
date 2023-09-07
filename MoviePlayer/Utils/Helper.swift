@@ -28,5 +28,24 @@ extension String {
         )
     }
 }
+struct MyButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button(action: {
+            
+        }) {
+            configuration.label
+                .padding()
+                .foregroundColor(.white)
+                .font(.system(size: 10))
+        }
+        .background(Color(hex: 0xF24C3D))
+        .cornerRadius(10)
+    }
+}
+
+
+
+
+
 
 

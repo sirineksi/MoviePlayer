@@ -65,4 +65,37 @@ class APIManager {
         }.resume()
         
     }
+    
+    func fetchUsers(completion: @escaping([User]) -> Void) {
+        
+        guard let url = URL(string: "https://api.escuelajs.co/api/v1/users") else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, respnse, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let data = data else {
+                return
+            }
+        
+            do {
+                let users = try JSONDecoder().decode([User].self, from: data)
+                DispatchQueue.main.async {
+                    completion(users)
+                }
+            }catch {
+                print("Error decoding data: \(error.localizedDescription)")
+            }
+            
+            
+        }.resume()
+        
+        
+        
+    }
+    
 }

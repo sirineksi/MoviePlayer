@@ -32,3 +32,16 @@ struct Product: Codable, Identifiable {
         case id, title, price, description, category, images
     }
 }
+
+struct User: Codable, Identifiable {
+    let id: Int
+    let email: String
+    let password: String
+    let name: String
+    let role: String
+    let avatar: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, email, password, name, role, avatar
+    }
+}

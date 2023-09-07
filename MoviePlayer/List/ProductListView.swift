@@ -18,7 +18,7 @@ struct ProductListView: View {
             
                 List(products) { product in
                   
-                        NavigationLink(destination: ProductViev(product: product)) {
+                        NavigationLink(destination: ProductView(product: product)) {
                         VStack{
                            
                             AsyncImage(url: URL(string: product.category.image))
@@ -60,22 +60,6 @@ struct ProductListView: View {
                             
                             .padding()
                             
-                            VStack  {
-
-                                Button(action: {}) {
-                                    Text("Detaya Git")
-                                        
-                                        .padding()
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 13))
-                                        
-                                }
-                                .fixedSize()
-                                .background(Color(hex: 0xF24C3D))
-                                .padding()
-                                
-                                
-                            }
                     }
                         }
                         

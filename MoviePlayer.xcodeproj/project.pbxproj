@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		236D72582AA5E17900548357 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D72572AA5E17900548357 /* Helper.swift */; };
+		238B634C2AA73BA900E37013 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B634B2AA73BA900E37013 /* CustomImageView.swift */; };
+		238B634E2AA73D7D00E37013 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B634D2AA73D7D00E37013 /* UserListView.swift */; };
+		238B63502AA73DFA00E37013 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B634F2AA73DFA00E37013 /* UserView.swift */; };
 		238ED27D2A9CBCEC009469DB /* MoviePlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED27C2A9CBCEC009469DB /* MoviePlayerApp.swift */; };
 		238ED27F2A9CBCEC009469DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED27E2A9CBCEC009469DB /* ContentView.swift */; };
 		238ED2812A9CBCEF009469DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238ED2802A9CBCEF009469DB /* Assets.xcassets */; };
@@ -16,12 +19,15 @@
 		238ED28F2A9CBD34009469DB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED28E2A9CBD34009469DB /* APIManager.swift */; };
 		238ED2932A9CC2C9009469DB /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED2922A9CC2C9009469DB /* CategoryListView.swift */; };
 		238ED2962A9CC378009469DB /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED2952A9CC378009469DB /* CategoryView.swift */; };
-		238ED29B2AA09A7D009469DB /* ProductViev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED29A2AA09A7D009469DB /* ProductViev.swift */; };
+		238ED29B2AA09A7D009469DB /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED29A2AA09A7D009469DB /* ProductView.swift */; };
 		238ED29D2AA09B2A009469DB /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ED29C2AA09B2A009469DB /* ProductListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		236D72572AA5E17900548357 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		238B634B2AA73BA900E37013 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		238B634D2AA73D7D00E37013 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		238B634F2AA73DFA00E37013 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		238ED2792A9CBCEC009469DB /* MoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238ED27C2A9CBCEC009469DB /* MoviePlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayerApp.swift; sourceTree = "<group>"; };
 		238ED27E2A9CBCEC009469DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +37,7 @@
 		238ED28E2A9CBD34009469DB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		238ED2922A9CC2C9009469DB /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		238ED2952A9CC378009469DB /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		238ED29A2AA09A7D009469DB /* ProductViev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViev.swift; sourceTree = "<group>"; };
+		238ED29A2AA09A7D009469DB /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		238ED29C2AA09B2A009469DB /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 				238ED27C2A9CBCEC009469DB /* MoviePlayerApp.swift */,
 				238ED2802A9CBCEF009469DB /* Assets.xcassets */,
 				238ED2822A9CBCEF009469DB /* Preview Content */,
+				238B634B2AA73BA900E37013 /* CustomImageView.swift */,
 			);
 			path = MoviePlayer;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			children = (
 				238ED2922A9CC2C9009469DB /* CategoryListView.swift */,
 				238ED29C2AA09B2A009469DB /* ProductListView.swift */,
+				238B634D2AA73D7D00E37013 /* UserListView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -131,7 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				238ED2952A9CC378009469DB /* CategoryView.swift */,
-				238ED29A2AA09A7D009469DB /* ProductViev.swift */,
+				238ED29A2AA09A7D009469DB /* ProductView.swift */,
+				238B634F2AA73DFA00E37013 /* UserView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -209,9 +218,12 @@
 				238ED29D2AA09B2A009469DB /* ProductListView.swift in Sources */,
 				238ED28F2A9CBD34009469DB /* APIManager.swift in Sources */,
 				238ED28C2A9CBD15009469DB /* Model.swift in Sources */,
-				238ED29B2AA09A7D009469DB /* ProductViev.swift in Sources */,
+				238ED29B2AA09A7D009469DB /* ProductView.swift in Sources */,
 				238ED2962A9CC378009469DB /* CategoryView.swift in Sources */,
 				236D72582AA5E17900548357 /* Helper.swift in Sources */,
+				238B634C2AA73BA900E37013 /* CustomImageView.swift in Sources */,
+				238B63502AA73DFA00E37013 /* UserView.swift in Sources */,
+				238B634E2AA73D7D00E37013 /* UserListView.swift in Sources */,
 				238ED27F2A9CBCEC009469DB /* ContentView.swift in Sources */,
 				238ED27D2A9CBCEC009469DB /* MoviePlayerApp.swift in Sources */,
 				238ED2932A9CC2C9009469DB /* CategoryListView.swift in Sources */,

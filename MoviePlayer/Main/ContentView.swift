@@ -19,6 +19,10 @@ struct ContentView: View {
                 NavigationLink(destination:ProductListView()) {
                     Text("Product List View")
                 }.padding()
+                
+                NavigationLink(destination:UserListView()) {
+                    Text("User List View")
+                }.padding()
             }
         }
         .navigationBarTitle("Main View", displayMode: .inline)
